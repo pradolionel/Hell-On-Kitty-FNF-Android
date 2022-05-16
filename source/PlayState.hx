@@ -1659,6 +1659,7 @@ var santa:BGSprite;
 	var canPause:Bool = true;
 	var limoSpeed:Float = 0;
 
+	var cutsceneStaticTimer:FlxTween;
 	override public function update(elapsed:Float)
 	{
 		/*if (FlxG.keys.justPressed.NINE)
