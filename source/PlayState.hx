@@ -2655,7 +2655,13 @@ class PlayState extends MusicBeatState
 			}
 		} else {
 			switch (curStage) {
-				//case 'your stage name in case you want to set position ma
+				//case 'your stage name in case you want to set position manual source code instead':
+
+				default:
+					camFollow.set(staticCamX, staticCamY);
+			}
+		}
+	}
 
 	function tweenCamIn() {
 		if (Paths.formatToSongPath(SONG.song) == 'tutorial' && cameraTwn == null && FlxG.camera.zoom != 1.3) {
